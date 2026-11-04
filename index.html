@@ -609,44 +609,27 @@
         color: rgb(6, 94, 96);
     }
 
+    div.contact{
+        box-shadow: 3px 3px 7px gray;
+    }
+
+    .contact-section {
+        background: linear-gradient(to bottom, lightblue, white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
 
-    .fb {
+    .fb-icon,
+    .tt-icon {
         display: flex;
         width: 50px;
         height: 50px;
-        background-color: lightblue;
+        object-fit: cover;
         border-radius: 50%;
-        gap: 20px;
-    }
 
-    .tt {
-        display: flex;
-        width: 50px;
-        height: 50px;
-        background-color: lightblue;
-        border-radius: 50%;
-        gap: 20px;
-    }
-
-    .backToTop i{
-        font-size: 70px;
-        text-shadow: 3px 3px 10px rgb(92, 224, 196);
-    }
-
-    div.backToTop{
-        position:fixed;
-        right:30px;
-        bottom:30px;
-        z-index: 1000;
-    }
-
-    header{
-        position: sticky;
-        top:0;
-        left:0;
-        z-index:1000;
-        width: 100%;
     }
 
     .submenu-sightseeing{
@@ -733,9 +716,9 @@
 
             <ul class="menu">
                 <li><a href="#">Home</a></li>
-                <li class="find-menu"><a href="#find">Find ideal destinations</a></li>
-                <li class="about"><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="find-menu"><a href="#">Find ideal destinations</a></li>
+                <li class="about"><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -959,7 +942,7 @@
     </div> -->
 
 
-    <div class="about_us" id="about">ABOUT US</div>
+    <div class="about_us">ABOUT US</div>
 
     <div class="members">
         <div class="mem mem1">
@@ -998,27 +981,31 @@
             <p class="email">Email: 2551052067vy@ou.edu.vn</p>
         </div>
     </div>
+    <div class="contact">Contact</div>
+    <div class="contact-section">
 
-    <div class="contact" id="contact">Contact</div>
-    <h3>
-        <p>Email: hcmctravel@gmail.com</p>
-        <p>Phone: 0835968630</p>
-        <p>Address: 96 Vo Van Tan, Xuan Hoa, Ho Chi Minh</p>
-        <p>Open: from 8am to 5pm</p>
-        <p>Social network:</p>
-    
 
-    </h3>
-    <div class="fb">
-        <img src="./images/fblogo.png" alt="Facebook Logo" class="fb-icon">
-        
+        <h3>
+            <p>Email: hcmctravel@gmail.com</p>
+            <p>Phone: 0835968630</p>
+            <p>Address: 96 Vo Van Tan, Xuan Hoa, Ho Chi Minh</p>
+            <p>Open: from 8am to 5pm</p>
+            <p>Social network:</p>
+        </h3>
+        <div class="social-icon">
+            <div class="fb">
+                <img src="./images/fblogo.png" alt="Facebook Logo" class="fb-icon">
+
+            </div>
+            <div class="tt">
+                <img src="./images/ttlogo.png" alt="Tiktok Logo" class="tt-icon">
+
+            </div>
+        </div>
+
+
     </div>
-    <div class="tt">
-        <img src="./images/ttlogo.png" alt="Tiktok Logo" class="tt-icon">
-       
-    </div>
 
-    <div class="backToTop"><a href="#"><i class="fa-solid fa-circle-up" style="color: rgb(73, 158, 143);"></i></a></div>
 
 </body>
 
