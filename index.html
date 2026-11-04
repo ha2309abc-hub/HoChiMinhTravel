@@ -175,6 +175,20 @@
         box-shadow: 4px 5px 7px lightblue;
     }
 
+    div.sightseeing{
+        font-size: 39px;
+        font-weight: bold;
+        font-style: italic;
+        color: rgb(148, 138, 3);
+        position: relative;
+        top: -32px;
+        background-color: white;
+        padding: 0 20px;
+        margin: 0 auto;
+        width: fit-content;
+        text-shadow: 2px 3px 5px rgb(158, 158, 158);
+    }
+
     div.find {
         width: fit-content;
         margin-bottom: 30px;
@@ -184,7 +198,7 @@
         display: flex;
         justify-content: center;
         gap: 30px;
-        margin: 50px auto 50px auto;
+        margin: 0 auto 50px auto;
     }
 
     .benefit img {
@@ -332,8 +346,9 @@
 
     .searchByName {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
+        padding: 0 20px 0 0;
         max-width: 1100px;
         margin: 50px auto;
         align-items: start;
@@ -633,6 +648,53 @@
         z-index:1000;
         width: 100%;
     }
+
+    .submenu-sightseeing{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .submenu-sightseeing > div:nth-child(2), .submenu-sightseeing > div:nth-child(3){
+        padding: 10px 0 10px 10px;
+        font-size: 20px;
+        background: linear-gradient(to top right, rgb(255, 234, 196), lightyellow, lightblue);
+        color: chocolate;
+        font-weight: bold;
+        border-radius: 0 20px 20px 0;
+        box-shadow: 2px 3px 5px rgb(218, 218, 112);
+    }
+
+    div.sightseeing_title{
+        background: linear-gradient(to top right, rgb(199, 186, 2), rgb(207, 207, 36));
+        color: white;
+        font-size: 26px;
+        font-weight: bold;
+        padding: 20px 0 20px 10px;
+        border-radius: 0 20px 0 0;
+        box-shadow: 2px 3px 5px rgb(218, 218, 112);
+
+    }
+
+    .submenu-sightseeing > div > div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .submenu-sightseeing > div > div:nth-child(2){
+        padding: 10px 0 10px 10px;
+        font-size: 20px;
+        background: linear-gradient(to top right, rgb(255, 234, 196), lightyellow, lightblue);
+        color: chocolate;
+        font-weight: bold;
+        border-radius: 0 0 20px 0;
+        box-shadow: 2px 3px 5px rgb(218, 218, 112);
+    }
+
+    .submenu-sightseeing > div:nth-child(2):hover, .submenu-sightseeing > div:nth-child(3):hover, .submenu-sightseeing > div > div:nth-child(2):hover{
+        background: linear-gradient(to top right, rgb(241, 211, 156), rgb(237, 237, 149), rgb(145, 206, 226));
+
+    }
 </style>
 
 <body>
@@ -721,6 +783,8 @@
     <!--FINDING-->
 
     <div class="find" id="find">FIND YOUR IDEAL DESTINATION</div>
+    <hr class="full-width-line">
+    <div class="sightseeing">~~ Sightseeing ~~</div>
     <div class="container">
         <div class="district">
             <form action="search">
@@ -756,8 +820,7 @@
             </form>
         </div>
 
-        <div class="form">
-            <!-- <label for="form">Form of travel: </label> -->
+        <!-- <div class="form">
             <form>
                 <select name="form" id="form">
                     <option value="" disabled selected hidden>-- Form of travel --</option>
@@ -767,12 +830,20 @@
                 </select>
                 <img src="./images/search.png">
             </form>
-        </div>
+        </div> -->
     </div>
 
     <hr class="full-width-line">
-
     <div class="searchByName">
+        <div class="submenu-sightseeing">
+            <div>
+                <div class="sightseeing_title">Sightseeing...</div>
+                <div>Historical Sites</div>
+            </div>
+            <div>Museums & Galleries</div>
+            <div>Parks & Gardens</div>
+        </div>
+
         <div class="column col1">
             <div class="c-text">
                 <h1>If you already have a place in mind, just let us know!</h1>
