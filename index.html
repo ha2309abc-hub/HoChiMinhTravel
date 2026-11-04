@@ -175,7 +175,7 @@
         box-shadow: 4px 5px 7px lightblue;
     }
 
-    div.sightseeing{
+    div.sightseeing {
         font-size: 39px;
         font-weight: bold;
         font-style: italic;
@@ -609,7 +609,7 @@
         color: rgb(6, 94, 96);
     }
 
-    div.contact{
+    div.contact {
         box-shadow: 3px 3px 7px gray;
     }
 
@@ -623,7 +623,8 @@
 
 
     .fb-icon,
-    .tt-icon {
+    .tt-icon,
+    .ytb-icon {
         display: flex;
         width: 50px;
         height: 50px;
@@ -632,13 +633,14 @@
 
     }
 
-    .submenu-sightseeing{
+    .submenu-sightseeing {
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
 
-    .submenu-sightseeing > div:nth-child(2), .submenu-sightseeing > div:nth-child(3){
+    .submenu-sightseeing>div:nth-child(2),
+    .submenu-sightseeing>div:nth-child(3) {
         padding: 10px 0 10px 10px;
         font-size: 20px;
         background: linear-gradient(to top right, rgb(255, 234, 196), lightyellow, lightblue);
@@ -648,7 +650,7 @@
         box-shadow: 2px 3px 5px rgb(218, 218, 112);
     }
 
-    div.sightseeing_title{
+    div.sightseeing_title {
         background: linear-gradient(to top right, rgb(199, 186, 2), rgb(207, 207, 36));
         color: white;
         font-size: 26px;
@@ -659,12 +661,12 @@
 
     }
 
-    .submenu-sightseeing > div > div{
+    .submenu-sightseeing>div>div {
         display: flex;
         flex-direction: column;
     }
 
-    .submenu-sightseeing > div > div:nth-child(2){
+    .submenu-sightseeing>div>div:nth-child(2) {
         padding: 10px 0 10px 10px;
         font-size: 20px;
         background: linear-gradient(to top right, rgb(255, 234, 196), lightyellow, lightblue);
@@ -674,7 +676,9 @@
         box-shadow: 2px 3px 5px rgb(218, 218, 112);
     }
 
-    .submenu-sightseeing > div:nth-child(2):hover, .submenu-sightseeing > div:nth-child(3):hover, .submenu-sightseeing > div > div:nth-child(2):hover{
+    .submenu-sightseeing>div:nth-child(2):hover,
+    .submenu-sightseeing>div:nth-child(3):hover,
+    .submenu-sightseeing>div>div:nth-child(2):hover {
         background: linear-gradient(to top right, rgb(241, 211, 156), rgb(237, 237, 149), rgb(145, 206, 226));
 
     }
@@ -994,12 +998,22 @@
         </h3>
         <div class="social-icon">
             <div class="fb">
-                <img src="./images/fblogo.png" alt="Facebook Logo" class="fb-icon">
-
+                <a href="https://www.facebook.com/share/1ADcNTcjMN/" target ="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./images/fblogo.png" alt="Facebook Logo" class="fb-icon">
+                </a>
             </div>
             <div class="tt">
-                <img src="./images/ttlogo.png" alt="Tiktok Logo" class="tt-icon">
-
+                <a href="https://www.tiktok.com/@hcmcou?is_from_webapp=1&sender_device=pc" target="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./images/ttlogo.png" alt="Tiktok Logo" class="tt-icon">
+                </a>
+            </div>
+            <div class="ytb">
+                <a href="https://youtube.com/@hochiminhcityopenuniversity?si=e8HdgOwB3thNrmGh" target ="_blank"
+                    rel="noopener noreferrer">
+                    <img src="./images/ytblogo.png" alt="Youtube Logo" class="fb-icon">
+                </a>
             </div>
         </div>
 
