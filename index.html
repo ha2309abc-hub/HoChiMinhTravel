@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name= "viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -682,6 +682,276 @@
         background: linear-gradient(to top right, rgb(241, 211, 156), rgb(237, 237, 149), rgb(145, 206, 226));
 
     }
+
+    <<<<<<< HEAD
+    /*HISTORY */
+.history-section {
+
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 35px 50px;
+
+    background-color: #f0f7fc;
+    border: 2px solid #47d394;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.bubbles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Hình dạng bong bóng */
+.bubbles span {
+    position: absolute;
+    bottom: -60px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid rgba(19, 222, 205, 0.4); 
+    background: rgba(26, 202, 214, 0.25);
+    border-radius: 50%;
+    animation: bubble 8s infinite ease-in;
+}
+
+/* Vị trí và tốc độ từng bong bóng */
+.bubbles span:nth-child(1) {
+    left: 10%;
+    animation-duration: 7s;
+}
+
+.bubbles span:nth-child(2) {
+    left: 25%;
+    width: 15px;
+    height: 15px;
+    animation-duration: 9s;
+    animation-delay: 2s;
+}
+
+.bubbles span:nth-child(3) {
+    left: 40%;
+    width: 35px;
+    height: 35px;
+    animation-duration: 10s;
+    animation-delay: 1s;
+}
+
+.bubbles span:nth-child(4) {
+    left: 55%;
+    animation-duration: 8s;
+    animation-delay: 3s;
+}
+
+.bubbles span:nth-child(5) {
+    left: 70%;
+    width: 18px;
+    height: 18px;
+    animation-duration: 7s;
+    animation-delay: 1.5s;
+}
+
+.bubbles span:nth-child(6) {
+    left: 85%;
+    width: 30px;
+    height: 30px;
+    animation-duration: 11s;
+    animation-delay: 2s;
+}
+
+.bubbles span:nth-child(7) {
+    left: 95%;
+    width: 12px;
+    height: 12px;
+    animation-duration: 8s;
+    animation-delay: 4s;
+}
+
+.bubbles span:nth-child(8) {
+    left: 5%;
+    width: 20px;
+    height: 20px;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+
+/* Chuyển động bong bóng */
+@keyframes bubble {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1.0;
+    }
+
+    50% {
+        transform: translateY(-220px) translateX(20px);
+    }
+
+    100% {
+        transform: translateY(-450px) translateX(-15px);
+        opacity: 0;
+    }
+}
+
+/* Giữ nội dung phía trên hiệu ứng */
+.history-section h2,
+.history-content {
+    position: relative;
+    z-index: 1;
+}
+
+.history-section h2 {
+    text-align: center;
+    color: #397eaf;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.history-content p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+.history-content .history-message {
+    text-align: center;
+    font-weight: bold;
+    color: #397eaf;
+    font-style: italic;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+/* ABOUT US */
+* {
+    font-family: Arial, sans-serif;
+}
+.about-section {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.about-title, .contact-title {
+    background:linear-gradient(to top right, rgb(6, 67, 132),rgb(21, 69, 91), rgb(14, 100, 60), #68b48b, rgb(27, 139, 167), lightblue);
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    padding: 15px;
+    border-top: 2px solid purple;
+    border-bottom: 2px solid purple;
+    -webkit-text-stroke: 3px black;
+    paint-order: stroke fill;
+}
+
+.about-label {
+    display: inline-block;
+    background-color: #be1010;
+    color: white;
+    font-size: 24px;
+     font-weight: bold;
+    padding: 15px 60px;
+    margin-top: 20px;
+    border: 2px solid yellow;
+
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        88% 50%,
+        100% 100%,
+        0 100%,
+        12% 50%
+    );
+    -webkit-text-stroke: 2px black;
+    paint-order: stroke fill;
+
+     
+}
+
+.about-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 45px;
+    gap: 50px;
+    min-height: 350px;
+}
+
+.about-row img {
+    width: 320px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0; 
+    border: 2px solid #142b40;
+}
+.about-img2 {
+    margin-top: 100px;
+     width: 320px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0; 
+    border: 2px solid #142b40;
+}
+
+ .about-text h2 {
+    color: #589bd0;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.about-text {
+    flex: 1;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+
+.about-divider {
+    width: 50%;
+    border: none;
+    border-top: 2px solid steelblue;
+    margin: 20px 5%;
+}
+.copyright {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+}
+
+.accredited {
+    animation: blink 1.2s infinite;
+    font-size: 20px; /* Điều chỉnh kích thước chữ */
+   
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+}
+
 </style>
 
 <body>
@@ -1020,7 +1290,139 @@
 
     </div>
 
+     <!-- OUR STORY -->
+    <section class="history-section">
 
+        <div class="bubbles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <h2>OUR STORY</h2>
+
+        <div class="history-content">
+
+            <p>
+                <strong>Founded on October 31, 2026</strong>,
+                Ho Chi Minh City – Local Travel was established from a shared
+                vision: to make the discovery of our city more accessible,
+                meaningful, and inspiring for everyone.
+            </p>
+
+            <p>
+                What began as an aspiration among a group of individuals has
+                grown into a commitment to connecting people with places,
+                cultures, and authentic local experiences. We believe that
+                travelling should not be complicated. Everyone deserves
+                access to reliable information and practical guidance that
+                enables them to discover destinations efficiently,
+                confidently, and at their own pace.
+            </p>
+
+            <p>
+                As the creators of this platform, we share the same desire
+                to explore, learn, and experience the city alongside our
+                visitors. We are committed to presenting useful, thoughtful,
+                and trustworthy information while celebrating the cultural
+                diversity and everyday beauty of Ho Chi Minh City.
+            </p>
+
+            <p class="history-message">
+                Our story is not simply about discovering places; it is
+                about bringing people closer to the city, to its culture,
+                and to one another.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- WORK WITH US -->
+    <div class="about-section">
+
+        <div class="about-title">
+            WORK WITH US
+        </div>
+
+        <div class="about-label">
+            <h2 class="accredited">ACCREDITED</h2>
+        </div>
+
+        <div class="about-row">
+
+            <img
+                src="https://cdn-proxy.hoolacdn.com/hoola-blog/sgp1/blog/2021/08/-a-ng-ky--website-vo--i-Bo---co-ng-thu-o-ng.jpeg"
+                alt="About us">
+
+            <div class="about-text">
+                <h2>H2VT TECHNOLOGY COMPANY LIMITED</h2>
+
+                <p>
+                    Tax code 01836183618 issued by the Department of Business
+                    Registration - Ho Chi Minh City Department of Finance
+                    on October 31, 2026.
+                </p>
+            </div>
+
+        </div>
+
+        <hr class="about-divider">
+
+        <div class="about-row">
+
+            <div class="about-text">
+
+                <p>
+                    <strong>Ho Chi Minh City – Local Travel</strong> was
+                    created with the passion of sharing the beauty, culture,
+                    and unique experiences of Ho Chi Minh City with people
+                    around the world.
+                </p>
+
+                <p>
+                    Our goal is to build a platform where locals and visitors
+                    can connect, discover new destinations, and share their
+                    travel experiences. We hope to inspire more people to
+                    explore the city, appreciate its cultural diversity,
+                    support local businesses, and create meaningful memories
+                    together.
+                </p>
+
+                <p>
+                    <strong>
+                        Explore more, connect with others, and experience
+                        Ho Chi Minh City together!
+                    </strong>
+                </p>
+
+                <p>
+                    Want to make a reservation quickly?
+
+                    <a href="support.html">
+                        TERMS OF USE (Điều khoản sử dụng)
+                    </a>
+
+                    <br>
+
+                    The HCMCTravel app is completely FREE!
+                </p>
+
+            </div>
+
+            <img
+                src="https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNmFlNjMyMjI4MWQ0ODE5MWJkZjQ1NDA2OWI1ZDMxMjg6ZmlsZV8wMDAwMDAwMGM4NzQ4MjA5YWMzMTA2MmMwMzFlNTkxNSIsImdpem1vX2lkIjpudWxsLCJ3aWQiOm51bGwsIm9pZCI6bnVsbCwic2lkIjpudWxsLCJjcyI6bnVsbCwiZm4iOm51bGwsImNkIjpudWxsLCJ0cyI6IjIwNzU3IiwicCI6InB5aSIsImNpZCI6IjEiLCJzaWciOiJmNzUzZTk2NzNkYjhhNjExYmM3YWE3YzdlY2VlMTJiZTQ1MjE0ZWJkZTM3YzVmODBlOGExMTk2YmM2MjFiOGY1IiwidiI6IjAiLCJjZG4iOm51bGwsImNwIjpudWxsLCJtYSI6bnVsbH0="
+                alt="About HCMC Travel">
+
+        </div>
+
+        <div class="copyright">
+            © 2026 HCMC LOCAL TRAVEL
+        </div>
 </body>
 
 </html>
