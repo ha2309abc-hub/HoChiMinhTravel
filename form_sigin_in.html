@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-size: 24px;
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 50%;;
+        }
+
+        .byFacebook, .byGoogle {
+            display: flex;
+            width: 400px;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            border: 2px solid chocolate;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        legend {
+            font-size: 36px;
+            text-align: center;
+            color: chocolate;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        fieldset{
+            border: 2px solid chocolate;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 3px 2px 7px gray;
+        }
+
+        a, label {
+            text-decoration: none;
+            color: chocolate;
+            font-weight: bold;
+        }
+
+        table {
+            margin-top: 30px;
+        }
+
+        button {
+            background-color: rgb(254, 246, 241);
+        }
+
+        button.sign_in {
+            width: 100%;
+            margin-top: 50px;
+            background-color: chocolate;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        p{
+            padding: 5px 0;
+            margin: 0;
+        }
+
+       body{
+            background-color: rgb(254, 233, 217);
+       }
+
+        hr {
+            border-color: chocolate;
+            margin: 40px;
+            box-shadow: 2px 2px 7px rgb(156, 156, 156);
+        }
+
+        .or {
+            position: relative;
+            margin: -60px auto 0;
+            color: chocolate;
+            background-color: white;
+            width: fit-content;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        .password label, .password input{
+            display: inline-block;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+       <fieldset>
+            <legend>Sign in</legend>
+            <div class="otherWaysToSignIn">
+                <button class="byFacebook">
+                    <img src="./images/fblogo.png" alt="facebook">
+                    <p>Sign in with Facebook</p>
+                </button>
+
+                <button class="byGoogle">
+                    <img src="./images/googleLogo.png" alt="googleLogo">
+                    <p>Sign in with Google</p>
+                </button>
+            </div>
+            <hr>
+            <p class="or">OR</p>
+            <table>
+                <tr>
+                    <td><label for="username">Username: </label></td>
+                    <td><input type="text" name="username" id="username"></td>
+                </tr>
+                <tr class="password">
+                    <td ><label for="password">Password: </label></td>
+                    <td><input type="text" name="password" id="password"></td>
+                </tr>
+            </table>
+            <button class="sign_in">Sign in</button>
+            
+       </fieldset> 
+       <p>Haven't had an account yet? <a href="#">Sign up</a></p>
+    </form>
+</body>
+</html>
