@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover your favorite</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-size: 24px;
+        }
+
+        legend {
+            font-size: 38px;
+            font-weight: bold;
+            color: rgb(207, 92, 11);
+        }
+
+        hr {
+            border-color: chocolate;
+            margin-bottom: 30px;
+            box-shadow: 2px 2px 7px rgb(156, 156, 156);
+        }
+
+        form{
+            border: 2px solid chocolate;
+            /* background-color: rgb(255, 226, 205); */
+            width: 850px;
+            border-radius: 10px;
+            box-shadow: 3px 2px 7px rgb(170, 170, 170);
+            padding-bottom: 20px;
+            margin: auto;
+            background-color: white;
+        }
+
+        p{
+            background-color: chocolate;
+            color: white;
+            font-weight: bold;
+        }
+
+        input::placeholder{
+            font-size: 20px;
+        }
+
+       .info{
+            background-color: rgb(255, 213, 162);
+       }
+
+       .outer{
+        border-top: 3px solid chocolate;
+        border-bottom: 3px solid chocolate;
+       }
+
+       hr.second{
+        margin-top: 30px;
+       }
+
+       .submit{
+            background-color: chocolate;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            position: relative;
+            top: 10px;
+            left: 730px;
+            box-shadow: 3px 2px 7px rgb(170, 170, 170);
+       }
+
+       .submit:hover{
+            background-color: rgb(151, 74, 20);
+            cursor: pointer;
+       }
+
+       body{
+        background-color: rgb(254, 233, 217);
+       }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset class="outer">
+            <legend>Discover Your Favorite</legend> <hr>
+            <fieldset class="info">
+                <table>
+                    <tr>
+                        <td><label for="name">Full name: </label></td>
+                        <td><input type="text" name="name" id="name" placeholder="Enter your full name..."></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email address: </label></td>
+                        <td><input type="text" name="email" id="email" placeholder="Enter your email..."></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <hr class="second">
+            <ol>
+                <li> 
+                    <p>Are you more of an introvert or an extrovert?</p>
+                    <label for="character"><input type="radio" name="character" id="character">Introvert</label> <br>
+                    <label for="character"><input type="radio" name="character" id="character">Extrovert</label> <br>
+                    <label for="character"><input type="radio" name="character" id="character">A bit of both</label>
+
+                </li>
+                <li>
+                    <p>What kind of atmosphere do you prefer?</p>
+                    <label for="atmosphere"><input type="radio" name="atmosphere" id="atmosphere">Lively</label> <br>
+                    <label for="atmosphere"><input type="radio" name="atmosphere" id="atmosphere">Quite</label> <br>
+                    <label for="atmosphere"><input type="radio" name="atmosphere" id="atmosphere">Somewhere in between</label>
+                </li>
+                <li>
+                    <p>Who do you usually travel with?</p>
+                    <label for="who"><input type="radio" name="who" id="who">Alone</label> <br>
+                    <label for="who"><input type="radio" name="who" id="who">Friends or family</label> <br>
+                    <label for="who"><input type="radio" name="who" id="who">Partner</label>
+                </li>
+                <li>
+                    <p>How do you usually get around?</p>
+                    <label for="transport"><input type="radio" name="transport" id="transport">Motorbike</label> <br>
+                    <label for="transport"><input type="radio" name="transport" id="transport">Pulic transport</label> <br>
+                    <label for="transport"><input type="radio" name="transport" id="transport">Car or taxi</label>
+                </li>
+                <li>
+                    <p>What travel style do you like?</p>
+                    <label for="style"><input type="radio" name="style" id="style">Friendly and local</label> <br>
+                    <label for="style"><input type="radio" name="style" id="style">Comfortable and mid-range</label> <br>
+                    <label for="style"><input type="radio" name="style" id="style">Luxury</label>
+                </li>
+                <li>
+                    <p>What do you enjoy most on a trip?</p>
+                    <label for="enjoy_most"><input type="radio" name="enjoy_most" id="enjoy_most">Nature and scenery</label> <br>
+                    <label for="enjoy_most"><input type="radio" name="enjoy_most" id="enjoy_most">History and culture</label> <br>
+                    <label for="enjoy_most"><input type="radio" name="enjoy_most" id="enjoy_most">Entertainment and shopping</label>
+                </li>
+                <li>
+                    <p>How do you feel about food when traveling?</p>
+                    <label for="food"><input type="radio" name="food" id="food">Street food</label> <br>
+                    <label for="food"><input type="radio" name="food" id="food">Cafe</label> <br>
+                    <label for="food"><input type="radio" name="food" id="food">Fine dining</label>
+                </li>
+                <li>
+                    <p>When do you prefer to go out?</p>
+                    <label for="when"><input type="radio" name="when" id="when">Morning</label> <br>
+                    <label for="when"><input type="radio" name="when" id="when">Afternoon</label> <br>
+                    <label for="when"><input type="radio" name="when" id="when">Evening</label> 
+                </li>
+                <li>
+                    <p>How long is your usual trip?</p>
+                    <label for="how_long"><input type="radio" name="how_long" id="how_long">Half a day</label> <br>
+                    <label for="how_long"><input type="radio" name="how_long" id="how_long">One full day</label> <br>
+                    <label for="how_long"><input type="radio" name="how_long" id="how_long">Two days or more</label>
+                </li>
+                <li>
+                    <p>What weather do you like for traveling?</p>
+                    <label for="weather"><input type="radio" name="weather" id="weather">Sunny</label> <br>
+                    <label for="weather"><input type="radio" name="weather" id="weather">Cool</label> <br>
+                    <label for="weather"><input type="radio" name="weather" id="weather">I don't mind</label>
+                </li>
+                <li>
+                    <p>How active do you like to be?</p>
+                    <label for="active"><input type="radio" name="active" id="active">Relaxing</label> <br>
+                    <label for="active"><input type="radio" name="active" id="active">Light</label> <br>
+                    <label for="active"><input type="radio" name="active" id="active">Active</label>
+                </li>
+                <li>
+                    <p>Do you want to come back from your trip with beautiful photos?</p>
+                    <label for="photo"><input type="radio" name="photo" id="photo">Yes</label> <br>
+                    <label for="photo"><input type="radio" name="photo" id="photo">Not really</label> <br>
+                    <label for="photo"><input type="radio" name="photo" id="photo">No, I don't usually take photos</label>
+                </li>
+        </ol>
+        </fieldset>
+        <button class="submit">Submit</button>
+    </form>
+</body>
+</html>
