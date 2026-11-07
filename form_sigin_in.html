@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./js/sign_in.js"></script>
     <style>
         *{
             box-sizing: border-box;
@@ -140,5 +141,14 @@
        </fieldset> 
        <p>Haven't had an account yet? <a href="#">Sign up</a></p>
     </form>
+    <script>
+        Validator({
+            form: '#form-1',
+            rules: [
+                Validator.isRequired('#username'),
+                Validator.isPassword('#password'),
+            ]
+        });
+    </script>
 </body>
 </html>
