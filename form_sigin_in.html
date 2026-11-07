@@ -56,9 +56,6 @@
             font-weight: bold;
         }
 
-        table {
-            margin-top: 30px;
-        }
 
         button {
             background-color: rgb(254, 246, 241);
@@ -98,9 +95,12 @@
             padding: 5px;
         }
 
-        .password label, .password input{
-            display: inline-block;
-            margin-top: 30px;
+        .form_group input{
+            width: 100%;
+        }
+        
+        .form_group{
+            margin-top: 20px;
         }
 
     </style>
@@ -122,16 +122,19 @@
             </div>
             <hr>
             <p class="or">OR</p>
-            <table>
-                <tr>
-                    <td><label for="username">Username: </label></td>
-                    <td><input type="text" name="username" id="username"></td>
-                </tr>
-                <tr class="password">
-                    <td ><label for="password">Password: </label></td>
-                    <td><input type="text" name="password" id="password"></td>
-                </tr>
-            </table>
+
+            <div class="form_group username">
+                <label for="username">Username</label> <br>
+                <input type="text" name="username" id="username">
+                <span class="fomr_message"></span>
+            </div>
+
+             <div class="form_group password">
+                <label for="password">Password</label> <br>
+                <input type="text" name="password" id="password">
+                <span class="fomr_message"></span>
+            </div>
+           
             <button class="sign_in">Sign in</button>
             
        </fieldset> 
