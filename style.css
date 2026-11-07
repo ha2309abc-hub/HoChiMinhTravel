@@ -1033,3 +1033,20 @@
         color: rgb(43, 108, 96);
         /* border: 1px solid rgb(43, 108, 96); */
    }
+
+   .backToTop i {
+        font-size: 70px;
+        text-shadow: 3px 3px 7px rgb(86, 213, 190)
+   }
+
+   .backToTop {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+   }
+
+   header{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+   }
