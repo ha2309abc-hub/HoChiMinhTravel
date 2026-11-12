@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCMC Travel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
     * {
@@ -630,7 +633,6 @@
         height: 50px;
         object-fit: cover;
         border-radius: 50%;
-
     }
 
     .submenu-sightseeing {
@@ -712,7 +714,7 @@
                             <option value="it">Italiano</option>
                         </select>
                     </form>
-                    <div class="sign_in"><a href="#">Sign in</a></div>
+                    <div class="sign_in"><a href="./form_sigin_in.html">Sign in</a></div>
                     <div class="user"><img src="./images/avata.jpg"></div>
                 </div>
             </div>
@@ -720,9 +722,9 @@
 
             <ul class="menu">
                 <li><a href="#">Home</a></li>
-                <li class="find-menu"><a href="#">Find ideal destinations</a></li>
-                <li class="about"><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="find-menu"><a href="#find">Find ideal destinations</a></li>
+                <li class="about"><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -734,8 +736,14 @@
             <p id="p">Uncover the best local experiences and iconic sights all in one place.
                 Immerse yourself in rich traditions, lively streets, and amazing cuisine. Whether you seek relaxation or
                 adventure, your perfect trip begins here.
-                Let's make every moment of your destination story truly unforgettable!</p>
-            <button>Find destination base on your favourite -></button>
+                Let's make every moment of your destination story truly unforgettable!
+            </p>
+            <div class="favorite">
+                <p class="above_button">Haven't known where to go yet?</p>
+                <a href="form.html">
+                    <button>Discover your favourite <i class="fa-solid fa-right-long" style="color: rgb(255, 255, 255);"></i></button>
+                </a>
+            </div>
         </div>
 
     </div>
@@ -770,12 +778,59 @@
     <!--FINDING-->
 
     <div class="find" id="find">FIND YOUR IDEAL DESTINATION</div>
-    <hr class="full-width-line">
+    <div class="container">
+        <!-- Phần 1: Chọn District -->
+        <div class="district">
+            <form>
+                <select name="district" id="district">
+                    <option value="" disabled selected hidden>-- Select a district --</option>
+                    <option value="1">District 1</option>
+                    <option value="2">District 2</option>
+                    <option value="3">District 3</option>
+                    <option value="4">District 4</option>
+                    <option value="5">District 5</option>
+                    <option value="6">District 6</option>
+                    <option value="7">District 7</option>
+                    <option value="8">District 8</option>
+                    <option value="9">District 9</option>
+                    <option value="10">District 10</option>
+                    <option value="11">District 11</option>
+                    <option value="12">District 12</option>
+                </select>
+                <img src="./images/search.png" alt="Search">
+            </form>
+        </div>
+
+        <!-- Phần 2: Chọn Form of travel -->
+        <div class="form">
+            <form>
+                <select name="form" id="form">
+                    <option value="" disabled selected hidden>-- Form of travel --</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="sightseeing">Sightseeing</option>
+                    <option value="food-drink">Food &amp; Drink</option>
+                </select>
+                <img src="./images/search.png" alt="Search">
+            </form>
+        </div>
+
+        <div class="sub-category">
+            <select id="sub-category" disabled>
+                <option value="" disabled selected hidden>-- Specific category --</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Phần 3: Tìm kiếm theo tên địa điểm cụ thể (Ô 3) -->
+    <div class="search-bar">
+        <label for="place_name">Search for place: </label>
+        <input type="text" id="place_name" placeholder="Name of that place...">
+    </div>
+    <!-- <hr class="full-width-line">
     <div class="sightseeing">~~ Sightseeing ~~</div>
     <div class="container">
         <div class="district">
             <form action="search">
-                <!-- <label for="district">Disggtrict: </label> -->
                 <select name="district" id="district">
                     <option value="" disabled selected hidden>-- Select a district --</option>
                     <option value="1">District 1</option>
@@ -805,9 +860,9 @@
                 </select>
                 <img src="./images/search.png">
             </form>
-        </div>
+        </div> -->
 
-        <!-- <div class="form">
+    <!-- <div class="form">
             <form>
                 <select name="form" id="form">
                     <option value="" disabled selected hidden>-- Form of travel --</option>
@@ -820,16 +875,16 @@
         </div> -->
     </div>
 
-    <hr class="full-width-line">
+    <!-- <hr class="full-width-line"> -->
     <div class="searchByName">
-        <div class="submenu-sightseeing">
+        <!-- <div class="submenu-sightseeing">
             <div>
                 <div class="sightseeing_title">Sightseeing...</div>
                 <div>Historical Sites</div>
             </div>
             <div>Museums & Galleries</div>
             <div>Parks & Gardens</div>
-        </div>
+        </div> -->
 
         <div class="column col1">
             <div class="c-text">
@@ -876,7 +931,7 @@
         <div class=" column col3">
             <div class="c-img c3">
                 <img src="./images/SaigonNotre-DameCathedral.jpg" alt="SaigonNotre-DameCathedral">
-                <img src="./images/SaiGonZoo.jpg" atl="SaiGonZoo">
+                <img src="./images/SaiGonZoo.jpg" alt="SaiGonZoo">
                 <span class="c-img-title">Nhà Thờ Đức Bà
                     <br>
                     <p>Saigon Notre-Dame Cathedral</p>
@@ -886,68 +941,82 @@
                     <p>Sai Gon Zoo</p>
                 </span>
             </div>
-            <form action="search">
+            <!-- <form action="search">
                 <label for="place_name">Search for place: </label>
                 <input type="text" id="place_name" placeholder="Name of that place...">
-            </form>
+            </form> -->
         </div>
     </div>
-    <!--RECOMMENDATION-->
+    <div class="result">
+        <div class="col col1">
+            <img src="" alt="">
+            <p></p>
+        </div>
+        <div class="col col2">
+            <img src="" alt="">
+            <p></p>
+        </div>
+        <div class="col col3">
+            <img src="" alt="">
+            <p></p>
+        </div>
+    </div>
 
-    <!-- <h1>RECOMMENDATION</h1>
 
-    <div class="recommendations">
-        <div class="dragon">
-            <img src="./images/dragonWharf.jpg" alt="dragonWharf">
-            <h2>Dragon Wharf</h2>
-            <h3>Bến Nhà Rồng</h3>
+    <!-- <hr class="full-width-line"> -->
+
+    <!-- <div class="container">
+        <div class="district">
+            <form action="search">
+                <select name="district" id="district">
+                    <option value="" disabled selected hidden>-- Select a district --</option>
+                    <option value="1">District 1</option>
+                    <option value="2">District 2</option>
+                    <option value="3">District 3</option>
+                    <option value="4">District 4</option>
+                    <option value="5">District 5</option>
+                    <option value="6">District 6</option>
+                    <option value="7">District 7</option>
+                    <option value="8">District 8</option>
+                    <option value="9">District 9</option>
+                    <option value="10">District 10</option>
+                    <option value="11">District 11</option>
+                    <option value="12">District 12</option>
+                </select>
+                <img src="./images/search.png">
+            </form>
         </div>
 
-        <div class="independence">
-            <img src="./images/IndependencePalace.jpg" alt="IndependencePalace">
-            <h2>Independence Palace</h2>
-            <h3>Dinh Độc Lập</h3>
+        <div class="form">
+            <form>
+                <select name="form" id="form">
+                    <option value="" disabled selected hidden>-- Form of travel --</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="sightseeing">Sightseeing</option>
+                    <option value="food-drink">Food &amp; Drink</option>
+                </select>
+                <img src="./images/search.png">
+            </form>
         </div>
 
-        <div class="benThanh">
-            <img src="./images/BenThanhMarket.jpg" alt="BenThanhMarket">
-            <h2>Ben Thanh Market</h2>
-            <h3>Chợ Bến Thành</h3>
+        <div class="sub-category">
+            <select id="sub-categories" disabled>
+                <option value="" disabled selected hidden>-- Select specific category --</option>
+            </select>
         </div>
 
-        <div class="cathedral">
-            <img src="./images/SaigonNotre-DameCathedral.jpg" alt="SaigonNotre-DameCathedral">
-            <h2>Saigon Notre-Dame Cathedral</h2>
-            <h3>Nhà Thờ Đức Bà</h3>
+        <div id="filter-chips-container" class="filter-chips" style="display: none;">
+            <button class="chip active" data-sub="all">All</button>\
         </div>
-
-        <div class="war">
-            <img src="./images/WarRemnantsMuseum.jpg" alt="WarRemnantsMuseum">
-            <h2>War Remnant sMuseum</h2>
-            <h3>Bảo Tàng Chứng Tích Chiến Tranh</h3>
-        </div>
-
-        <div class=HoThiKy>
-            <img src="./images/HoThiKyFoodMarket.jpg" alt="HoThiKyFoodMarket">
-            <h2>Ho Thi Ky FoodMarket</h2>
-            <h3>Phố Ẩm Thực Hồ Thị Kỷ</h3>
-        </div>
-
-        <div class="waterBus">
-            <img src="./images/waterBus.jpg" alt="waterBus">
-            <h2>Water Bus</h2>
-        </div>
-
-        <div class=zoo>
-            <img src="./images/SaiGonZoo.jpg" atl="SaiGonZoo">
-            <h2>SaiGon Zoo</h2>
-            <h3>Thảo Cầm Viên</h3>
-        </div>
-    </div> -->
+    </div>
 
 
-    <div class="about_us">ABOUT US</div>
+    <form action="search">
+        <label for="place_name">Search for place: </label>
+        <input type="text" id="place_name" placeholder="Name of that place...">
+    </form> -->
 
+    <div class="about_us" id="about">ABOUT US</div>
     <div class="members">
         <div class="mem mem1">
             <div class="photo">
@@ -985,7 +1054,139 @@
             <p class="email">Email: 2551052067vy@ou.edu.vn</p>
         </div>
     </div>
-    <div class="contact">Contact</div>
+
+    <!-- OUR STORY -->
+    <section class="history-section">
+
+        <div class="bubbles">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <h2>OUR STORY</h2>
+
+        <div class="history-content">
+
+            <p>
+                <strong>Founded on October 31, 2026</strong>,
+                Ho Chi Minh City - Local Travel was established from a shared
+                vision: to make the discovery of our city more accessible,
+                meaningful, and inspiring for everyone.
+            </p>
+
+            <p>
+                What began as an aspiration among a group of individuals has
+                grown into a commitment to connecting people with places,
+                cultures, and authentic local experiences. We believe that
+                travelling should not be complicated. Everyone deserves
+                access to reliable information and practical guidance that
+                enables them to discover destinations efficiently,
+                confidently, and at their own pace.
+            </p>
+
+            <p>
+                As the creators of this platform, we share the same desire
+                to explore, learn, and experience the city alongside our
+                visitors. We are committed to presenting useful, thoughtful,
+                and trustworthy information while celebrating the cultural
+                diversity and everyday beauty of Ho Chi Minh City.
+            </p>
+
+            <p class="history-message">
+                Our story is not simply about discovering places; it is
+                about bringing people closer to the city, to its culture,
+                and to one another.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- WORK WITH US -->
+    <div class="about-section">
+
+        <div class="about-title">
+            WORK WITH US
+        </div>
+
+        <div class="about-label">
+            <h2 class="accredited">ACCREDITED</h2>
+        </div>
+
+        <div class="about-row">
+
+            <img src="https://cdn-proxy.hoolacdn.com/hoola-blog/sgp1/blog/2021/08/-a-ng-ky--website-vo--i-Bo---co-ng-thu-o-ng.jpeg"
+                alt="About us">
+
+            <div class="about-text">
+                <h2>H2VT TECHNOLOGY COMPANY LIMITED</h2>
+
+                <p>
+                    Tax code 01836183618 issued by the Department of Business
+                    Registration - Ho Chi Minh City Department of Finance
+                    on October 31, 2026.
+                </p>
+            </div>
+
+        </div>
+
+        <hr class="about-divider">
+
+        <div class="about-row">
+
+            <div class="about-text">
+
+                <p>
+                    <strong>Ho Chi Minh City – Local Travel</strong> was
+                    created with the passion of sharing the beauty, culture,
+                    and unique experiences of Ho Chi Minh City with people
+                    around the world.
+                </p>
+
+                <p>
+                    Our goal is to build a platform where locals and visitors
+                    can connect, discover new destinations, and share their
+                    travel experiences. We hope to inspire more people to
+                    explore the city, appreciate its cultural diversity,
+                    support local businesses, and create meaningful memories
+                    together.
+                </p>
+
+                <p>
+                    <strong>
+                        Explore more, connect with others, and experience
+                        Ho Chi Minh City together!
+                    </strong>
+                </p>
+
+                <p>
+                    Want to make a reservation quickly?
+
+                    <a href="support.html">
+                        TERMS OF USE (Điều khoản sử dụng)
+                    </a>
+
+                    <br>
+
+                    The HCMCTravel app is completely FREE!
+                </p>
+
+            </div>
+
+            <img src="https://chatgpt.com/backend-api/estuary/public_content/enc/eyJpZCI6Im1fNmFlNjMyMjI4MWQ0ODE5MWJkZjQ1NDA2OWI1ZDMxMjg6ZmlsZV8wMDAwMDAwMGM4NzQ4MjA5YWMzMTA2MmMwMzFlNTkxNSIsImdpem1vX2lkIjpudWxsLCJ3aWQiOm51bGwsIm9pZCI6bnVsbCwic2lkIjpudWxsLCJjcyI6bnVsbCwiZm4iOm51bGwsImNkIjpudWxsLCJ0cyI6IjIwNzU3IiwicCI6InB5aSIsImNpZCI6IjEiLCJzaWciOiJmNzUzZTk2NzNkYjhhNjExYmM3YWE3YzdlY2VlMTJiZTQ1MjE0ZWJkZTM3YzVmODBlOGExMTk2YmM2MjFiOGY1IiwidiI6IjAiLCJjZG4iOm51bGwsImNwIjpudWxsLCJtYSI6bnVsbH0="
+                alt="About HCMC Travel">
+
+        </div>
+
+
+
+
+            <div class="contact" id="contact">Contact</div>
     <div class="contact-section">
 
 
@@ -997,20 +1198,22 @@
             <p>Social network:</p>
         </h3>
         <div class="social-icon">
-            <div class="fb">
-                <a href="https://www.facebook.com/share/1ADcNTcjMN/" target ="_blank"
-                    rel="noopener noreferrer">
+            <div class="fb" style="display: flex; align-items: center; gap: 8px;">
+                <h3>Facebook</h3>
+                <a href="https://www.facebook.com/share/1ADcNTcjMN/" target="_blank" rel="noopener noreferrer">
                     <img src="./images/fblogo.png" alt="Facebook Logo" class="fb-icon">
                 </a>
             </div>
-            <div class="tt">
+            <div class="tt" style="display: flex; align-items: center; gap: 8px;">
+                <h3>Tiktok</h3>
                 <a href="https://www.tiktok.com/@hcmcou?is_from_webapp=1&sender_device=pc" target="_blank"
                     rel="noopener noreferrer">
                     <img src="./images/ttlogo.png" alt="Tiktok Logo" class="tt-icon">
                 </a>
             </div>
-            <div class="ytb">
-                <a href="https://youtube.com/@hochiminhcityopenuniversity?si=e8HdgOwB3thNrmGh" target ="_blank"
+            <div class="ytb" style="display: flex; align-items: center; gap: 8px;">
+                <h3>Youtube</h3>
+                <a href="https://youtube.com/@hochiminhcityopenuniversity?si=e8HdgOwB3thNrmGh" target="_blank"
                     rel="noopener noreferrer">
                     <img src="./images/ytblogo.png" alt="Youtube Logo" class="ytb-icon">
                 </a>
@@ -1021,6 +1224,12 @@
     </div>
 
 
+        <div class="copyright">
+            © 2026 HCMC LOCAL TRAVEL
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <div class="backToTop"><a href="#"><i class="fa-solid fa-circle-arrow-up" style="color: rgb(43, 108, 96);"></i></a></div>
 </body>
 
 </html>
